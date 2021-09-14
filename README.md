@@ -1,7 +1,8 @@
 # 90fy
 
 Projeto 90fy.
-Extensão para navegadores voltada à redução do uso excessivo de sites específicos.
+
+Extensão para navegadores voltada à redução do vício em sites específicos através de bloqueios.
 Projeto apresentado em 12/09/2021 no hackathon HackFools idealizado pelo CodeLab USP.
 
 Desenvolvido por:
