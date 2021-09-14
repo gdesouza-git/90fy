@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+ /**
+  * 90fy |  https://kdcinfo.com/app/tmt/
+  *
+  * Alert yourself to time spent on certain websites.
+  *
+  * Developer: Keith D Commiskey (https://kdcinfo.com) | Initial Development: 2020-06
+  *
+  */
+ -->
+  <head>
+    <meta charset="utf-8">
+    <title>90fy</title>
+    <meta name="description" content="Limite o tempo que você gasta em sites específicos">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+  </head>
+  <body>
+    <div id="ContainerApp">
+      <div id="TopBox">
+        <h1></h1>
+        <form id="DatesDiv">
+          <div class="div-form">
+            <div class="div-left">
+              <div>
+                <label>Insira a URL <small>(25 chars)</small><br>
+                  <input type="text" class="input-title" id="EntryTitle" name="entryTitle" maxLength=25 size=25 autofocus="autofocus" required>
+                </label>
+              </div>
+              <div>
+                <label>Delay Inicial<br>
+                  <input class="input-delay" type="number" min="1" max="60" value="5" size="3" required>
+                </label>
+
+                <label>Snooze(s)<br>
+                  <input class="input-snooze" type="number" min="1" max="60" value="2" size="3" required>
+                </label>
+
+                <label>Ativo<br>
+                  <input class="input-active" type="checkbox" value="1" checked>
+                </label>
+
+                <select class="input-select-alarm-type hidden">
+                  <option value="none">Passive</option><!-- (icon notification only) -->
+                  <option value="alerts" selected>Alerts</option>
+                  <option value="notifications">Desktop Notifications</option>
+                </select>
+              </div>
+              <div>
+                <input type="hidden" class="input-id" value="0" >
+                <button class="input-new" type="button">New</button>
+                <button class="input-reset" type="reset">Reset</button>
+                <button class="input-save">Save</button>
+              </div>
+            </div>
+            <div class="div-right">
+              <div>
+                <button class="tmt-button" type="button" id="TooMuchTimeClearTimer">Clear Active Timer</button>
+                <small>(Se houver)</small>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+  <!--
+    const arrayToMatchFromStorage = [
+            'twitter.com',
+            '//google.com',
+            '//www.google.com'
+          ],
+
+          mapFromStorage = new Map([
+            ['twitter.com', {id: 0, active: 1, url: '//twitter.com', delay: 5, snooze: 2, alarmType: 'alerts'}],
+            ['//google.com', {id: 1, active: 1, url: '//google.com', delay: 2, snooze: 2, alarmType: 'none'}],
+            ['//www.google.com', {id: 2, active: 1, url: '//google.com', delay: 1, snooze: 1, alarmType: 'alerts'}]
+          ]);
+
+    const _tmtData = {
+                      id: 0,
+                      active: 1,
+                      url: window.location.href,
+                      delay: 5,
+                      snooze: 2,
+                      alarmType: 'alerts' // prefNotification: 'alerts', // alerts|modals|notifications|none (only passive)
+                    };
+  -->
+</html>
