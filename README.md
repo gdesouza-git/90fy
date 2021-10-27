@@ -7,6 +7,6 @@ Projeto apresentado em 12/09/2021 no hackathon HackFools idealizado pelo CodeLab
 
 Desenvolvido por:
 - Arthur Sanchez
-- Gustavo Oliveira
-- João Vitor Verissimo
+- Gustavo Oliveira de Souza
+- João Vitor Verissimo Barbosa de Paiva
 - Julianne de Sá Laurindo
