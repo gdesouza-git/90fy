@@ -9,4 +9,4 @@ Desenvolvido por:
 - Arthur Sanchez
 - Gustavo Oliveira
 - João Vitor Verissimo
-- Julianne de Sá
+- Julianne de Sá Laurindo
